@@ -4,14 +4,16 @@
 
 function setup() {
   createCanvas(640, 240);
-  textFont("Arial");
+  textFont("Times New Roman");
 }
 
 function draw() {
   background(200);
-  textSize(16);
-  text("one small step for a man ...", 20, 60);
-  textSize(32);
-  text("one giant leap for mankind.", 20, 160);
+  textSize(20);
+  text("i'm on a seafood diet...", 20, 60);
+  if (mouseIsPressed) {
+  textSize(45);
+  text("i only see food and eat it!", 20, 160);
+  }
 
 }
